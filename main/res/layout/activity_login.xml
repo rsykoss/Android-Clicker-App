@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="80dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/logo" />
+
+        <!--<TextView
+            android:id="@+id/txtResponseId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:gravity="center" />-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="255dp">
+        <Button style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/btnSignOut"
+            android:text="@string/btnSignOutLabel"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:enabled="false"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/btnNext"
+            android:text="@string/btnNextLabel"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:enabled="false"/>
+    </RelativeLayout>
+</LinearLayout>

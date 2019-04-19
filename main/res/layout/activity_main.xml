@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.clicker.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/white">
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="80dp"/>
+
+<!--        <TextView
+            android:id="@+id/txtResponseId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:gravity="center" />-->
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:columnCount="1"
+        android:rowCount="5"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingHorizontal="25dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@android:color/white"
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btnAId"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="btnOnClickHandler"
+            android:visibility="visible"
+            app:cardBackgroundColor="#f44336"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+            <!--android:layout_rowWeight="1"
+            android:layout_columnWeight="1"-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnOnClickHandler"
+                    android:text="@string/btnALabel"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btnBId"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="btnOnClickHandler"
+            android:visibility="visible"
+            app:cardBackgroundColor="#2196f3"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnBLabel"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btnCId"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="btnOnClickHandler"
+            android:visibility="visible"
+            app:cardBackgroundColor="#009688"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnCLabel"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btnDId"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="btnOnClickHandler"
+            android:visibility="visible"
+            app:cardBackgroundColor="#ff9800"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnDLabel"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--<Button
+            android:id="@+id/btnBId"
+            android:text="@string/btnBLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnCountOnClickHandler"/>
+        <Button
+            android:id="@+id/btnCId"
+            android:text="@string/btnCLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnCountOnClickHandler"/>
+        <Button
+            android:id="@+id/btnDId"
+            android:text="@string/btnDLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnCountOnClickHandler"/>-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick">
+            <EditText
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Title"
+                android:focusable="true"
+                android:focusableInTouchMode ="true"/>
+            <Button
+                android:id="@+id/btnSend"
+                android:text="@string/btnSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnOnClickHandler"/>
+        </android.support.design.widget.TextInputLayout>
+    </GridLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Clicker</string>
+    <string name="btnALabel">A</string>
+    <string name="btnBLabel">B</string>
+    <string name="btnCLabel">C</string>
+    <string name="btnDLabel">D</string>
+    <string name="btnSignOutLabel">Sign Out</string>
+    <string name="btnNextLabel">Proceed</string>
+    <string name="Title">Comment</string>
+    <string name="btnSend">Send</string>
+
+</resources>
